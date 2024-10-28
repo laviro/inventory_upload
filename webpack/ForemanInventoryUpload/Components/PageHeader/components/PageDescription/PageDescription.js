@@ -42,7 +42,7 @@ export const PageDescription = () => (
       {__('For more information about the Subscriptions service, see:')}
       &nbsp;
       <a
-        href="https://access.redhat.com/documentation/en-us/subscription_central/2020-04/html/getting_started_with_subscription_watch/assembly-about-subscriptionwatch"
+        href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/index"
         target="_blank"
         rel="noopener noreferrer"
       >
