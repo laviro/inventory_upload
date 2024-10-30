@@ -6,7 +6,7 @@ import { isNotRhelHost } from '../ForemanRhCloudHelpers';
 export const InsightsTotalRiskChartWrapper = props => {
   if (props.status === 'RESOLVED') {
     return (
-      !isNotRhelHost(props.hostDetails) && <InsightsTotalRiskChart {...props} /> // check for RHEL hosts
+      !isNotRhelHost(props) && <InsightsTotalRiskChart {...props} /> // check for RHEL hosts
     );
   }
   return null;

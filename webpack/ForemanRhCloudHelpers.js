@@ -6,5 +6,8 @@
 export const foremanUrl = path => `${window.URL_PREFIX}${path}`;
 
 export const isNotRhelHost = ({ hostDetails }) =>
-  // eslint-disable-next-line camelcase
-  !new RegExp('red\\s?hat', 'i').test(hostDetails?.operatingsystem_name);
+  // This regex tries matches sane variations of "RedHat", "RHEL" and "RHCOS"
+  !new RegExp('red[\\s\\-]?hat|rh[\\s\\-]?el|rhc[\\s\\-]?os', 'i').test(
+    // eslint-disable-next-line camelcase
+    hostDetails?.operatingsystem_name
+  );
