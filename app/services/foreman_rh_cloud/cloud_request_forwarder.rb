@@ -33,7 +33,8 @@ module ForemanRhCloud
           }
         ),
       }
-      base_params.merge(path_params(original_request.path, certs))
+      requested_url = original_request.original_fullpath.end_with?('/') ? original_request.path + '/' : original_request.path
+      base_params.merge(path_params(requested_url, certs))
     end
 
     def prepare_forward_payload(original_request, controller_name)
