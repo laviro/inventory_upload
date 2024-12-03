@@ -54,7 +54,7 @@ class BranchInfoTest < ActiveSupport::TestCase
     hg_label = labels.find { |label| label[:key] == 'hostgroup' }
     host_colections = labels.select { |label| label[:key] == 'host collection' }
     assert_equal @host.hostgroup.name, hg_label[:value]
-    assert_equal 2, host_colections.count
+    assert_equal 7, host_colections.count
     refute_empty labels.select { |label| label[:namespace] == 'satellite_parameter' }
   end
 end

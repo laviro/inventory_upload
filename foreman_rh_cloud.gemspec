@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'foreman-tasks', '>= 10.0.0'
   s.add_runtime_dependency 'katello', '>= 4.14.0.rc1.1'
 
+  s.add_development_dependency 'minitest', '~> 5.25.1'
   s.add_development_dependency 'rdoc'
   s.add_development_dependency 'theforeman-rubocop', '~> 0.1.0'
 end
