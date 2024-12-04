@@ -20,9 +20,9 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.7', '< 4'
 
-  s.add_dependency 'foreman_ansible'
-  s.add_dependency 'foreman-tasks'
-  s.add_runtime_dependency 'katello', '>= 4.14.0.rc1.1'
+  s.add_dependency 'foreman_ansible', '< 15'
+  s.add_dependency 'foreman-tasks', '< 10'
+  s.add_runtime_dependency 'katello', '>= 4.14.0.rc1.1', '< 4.15'
 
   s.add_development_dependency 'rdoc'
   s.add_development_dependency 'theforeman-rubocop', '~> 0.1.0'
