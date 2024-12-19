@@ -5,7 +5,7 @@ exports[`CloudConnectorButton render no cloud connector 1`] = `
   onClick={[MockFunction]}
   variant="secondary"
 >
-  Configure Cloud Connector
+  Configure cloud connector
 </Button>
 `;
 
@@ -51,6 +51,6 @@ exports[`CloudConnectorButton render resolved cloud connector 1`] = `
   onClick={[MockFunction]}
   variant="secondary"
 >
-  Reconfigure Cloud Connector
+  Reconfigure cloud connector
 </Button>
 `;

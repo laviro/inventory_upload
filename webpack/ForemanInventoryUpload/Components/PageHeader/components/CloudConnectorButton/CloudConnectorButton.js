@@ -37,14 +37,14 @@ export const CloudConnectorButton = ({ status, onClick, jobLink }) => {
   if (status === CONNECTOR_STATUS.RESOLVED) {
     return (
       <Button variant="secondary" onClick={onClick}>
-        {__('Reconfigure Cloud Connector')}
+        {__('Reconfigure cloud connector')}
       </Button>
     );
   }
 
   return (
     <Button variant="secondary" onClick={onClick}>
-      {__('Configure Cloud Connector')}
+      {__('Configure cloud connector')}
     </Button>
   );
 };
