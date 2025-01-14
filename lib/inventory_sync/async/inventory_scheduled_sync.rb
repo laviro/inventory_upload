@@ -13,13 +13,17 @@ module InventorySync
           return
         end
 
-        after_delay do
-          # perform a sequence of sync then delete in parallel for all organizations
-          concurrence do
-            Organization.unscoped.each do |org|
-              sequence do
-                plan_org_sync(org)
-                plan_remove_insights_hosts(org.id) if Setting[:allow_auto_insights_mismatch_delete]
+        if ForemanRhCloud.with_local_advisor_engine?
+          plan_self # so that 'run' runs
+        else
+          after_delay do
+            # perform a sequence of sync then delete in parallel for all organizations
+            concurrence do
+              Organization.unscoped.each do |org|
+                sequence do
+                  plan_org_sync(org)
+                  plan_remove_insights_hosts(org.id) if Setting[:allow_auto_insights_mismatch_delete]
+                end
               end
             end
           end
@@ -28,6 +32,10 @@ module InventorySync
 
       def plan_org_sync(org)
         plan_action InventoryFullSync, org
+      end
+
+      def run
+        output[:status] = _('The scheduled process is disabled because this Foreman is configured with the use_local_advisor_engine option.') if ForemanRhCloud.with_local_advisor_engine?
       end
 
       def plan_remove_insights_hosts(org_id)

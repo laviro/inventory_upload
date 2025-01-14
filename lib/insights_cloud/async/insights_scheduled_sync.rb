@@ -13,9 +13,17 @@ module InsightsCloud
           return
         end
 
-        after_delay do
-          plan_full_sync
+        if ForemanRhCloud.with_local_advisor_engine?
+          plan_self
+        else
+          after_delay do
+            plan_full_sync # so that 'run' runs
+          end
         end
+      end
+
+      def run
+        output[:status] = _('The scheduled process is disabled because this Foreman is configured with the use_local_advisor_engine option.') if ForemanRhCloud.with_local_advisor_engine?
       end
 
       def plan_full_sync

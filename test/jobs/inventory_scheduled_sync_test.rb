@@ -14,6 +14,16 @@ class InventoryScheduledSyncTest < ActiveSupport::TestCase
     ForemanTasks.sync_task(InventorySync::Async::InventoryScheduledSync)
   end
 
+  test 'Skips execution if with_local_advisor_engine? is true' do
+    ForemanRhCloud.stubs(:with_local_advisor_engine?).returns(true)
+
+    InventorySync::Async::InventoryScheduledSync.any_instance.expects(:plan_org_sync).never
+
+    task = ForemanTasks.sync_task(InventorySync::Async::InventoryScheduledSync)
+    status = task.output[:status].to_s
+    assert_match(/Foreman is configured with the use_local_advisor_engine option/, status)
+  end
+
   test 'Skips execution if auto upload is disabled' do
     Setting[:allow_auto_inventory_upload] = false
 
