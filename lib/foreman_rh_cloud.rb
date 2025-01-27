@@ -5,8 +5,8 @@ require 'uri'
 module ForemanRhCloud
   def self.on_premise_url
     return unless ForemanRhCloud.with_local_advisor_engine?
-    port = ENV['ADVISOR_ENGINE_PORT'] || "8000"
-    ENV['ADVISOR_ENGINE_URL'] || "http://#{ForemanRhCloud.foreman_host.fqdn || 'localhost'}:#{port}"
+    port = ENV['ADVISOR_ENGINE_PORT'] || "24443"
+    ENV['ADVISOR_ENGINE_URL'] || "https://localhost:#{port}"
   end
 
   def self.env_or_on_premise_url(env_var_name)
