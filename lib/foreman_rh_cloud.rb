@@ -34,21 +34,20 @@ module ForemanRhCloud
     @query_limit ||= ENV['SATELLITE_RH_CLOUD_QUERY_LIMIT'] ? ENV['SATELLITE_RH_CLOUD_QUERY_LIMIT'].to_i : 100
   end
 
-  def self.http_proxy_string(logger: Foreman::Logging.logger('background'))
-    ForemanRhCloud.proxy_setting(logger: logger)
+  def self.http_proxy_string
+    ForemanRhCloud.proxy_setting
   end
 
-  def self.transformed_http_proxy_string(logger: Foreman::Logging.logger('background'))
-    ForemanRhCloud.transform_scheme(ForemanRhCloud.proxy_setting(logger: logger))
+  def self.transformed_http_proxy_string
+    ForemanRhCloud.transform_scheme(ForemanRhCloud.proxy_setting)
   end
 
-  def self.proxy_setting(logger: Foreman::Logging.logger('background'))
-    fix_port(proxy_string(logger: logger))
+  def self.proxy_setting
+    fix_port(proxy_string)
   end
 
-  def self.proxy_string(logger: Foreman::Logging.logger('background'))
+  def self.proxy_string
     HttpProxy.default_global_content_proxy&.full_url ||
-    ForemanRhCloud.cdn_proxy(logger: logger) ||
     ForemanRhCloud.global_foreman_proxy ||
     ''
   end
@@ -60,25 +59,6 @@ module ForemanRhCloud
     uri.send(:define_singleton_method, :default_port, -> { nil })
 
     uri.to_s
-  end
-
-  def self.cdn_proxy(logger: Foreman::Logging.logger('app'))
-    proxy_config = SETTINGS[:katello][:cdn_proxy]
-    return nil unless proxy_config
-
-    uri = URI('')
-    uri.host = proxy_config[:host]
-    uri.port = proxy_config[:port]
-    uri.scheme = proxy_config[:scheme] || 'http'
-
-    if proxy_config[:user]
-      uri.user = CGI.escape(proxy_config[:user])
-      uri.password = CGI.escape(proxy_config[:password])
-    end
-    uri.to_s
-  rescue URI::Error => e
-    logger.warn("cdn_proxy parsing failed: #{e}")
-    nil
   end
 
   def self.global_foreman_proxy

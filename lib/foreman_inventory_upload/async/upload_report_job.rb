@@ -51,7 +51,7 @@ module ForemanInventoryUpload
           'CER_PATH' => @cer_path
         )
 
-        http_proxy_string = ForemanRhCloud.http_proxy_string(logger: logger)
+        http_proxy_string = ForemanRhCloud.http_proxy_string
         if http_proxy_string
           env_vars['http_proxy'] = http_proxy_string
           env_vars['https_proxy'] = http_proxy_string

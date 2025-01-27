@@ -17,7 +17,7 @@ module ForemanRhCloud
         :satellite_cloud_connector_password => token_value,
       }
 
-      if (http_proxy = ForemanRhCloud.proxy_setting(logger: Foreman::Logging.logger('app')))
+      if (http_proxy = ForemanRhCloud.proxy_setting)
         input[:satellite_cloud_connector_http_proxy] = http_proxy
       end
 

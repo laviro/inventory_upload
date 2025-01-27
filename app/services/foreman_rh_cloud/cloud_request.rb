@@ -5,7 +5,7 @@ module ForemanRhCloud
     def execute_cloud_request(params)
       final_params = {
         verify_ssl: ForemanRhCloud.verify_ssl_method,
-        proxy: ForemanRhCloud.transformed_http_proxy_string(logger: logger),
+        proxy: ForemanRhCloud.transformed_http_proxy_string,
       }.deep_merge(params)
 
       response = RestClient::Request.execute(final_params)

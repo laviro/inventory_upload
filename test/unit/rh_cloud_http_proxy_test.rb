@@ -4,29 +4,12 @@ class RhCloudHttpProxyTest < ActiveSupport::TestCase
   setup do
     @global_content_proxy_mock = 'http://global:content@localhost:80'
     @global_foreman_proxy_mock = 'http://global:foreman@localhost:80'
-    @katello_cdn_proxy_mock = {
-      host: 'localhost',
-      port: '80',
-      user: 'katello',
-      password: 'cdn',
-      scheme: 'http',
-    }
-    @katello_cdn_proxy_string_mock = 'http://katello:cdn@localhost:80'
   end
 
   test 'selects global content proxy' do
     setup_global_content_proxy
     setup_global_foreman_proxy
-    setup_cdn_proxy do
-      assert_equal @global_content_proxy_mock, ForemanRhCloud.proxy_setting
-    end
-  end
-
-  test 'selects cdn proxy' do
-    setup_global_foreman_proxy
-    setup_cdn_proxy do
-      assert_equal @katello_cdn_proxy_string_mock, ForemanRhCloud.proxy_setting
-    end
+    assert_equal @global_content_proxy_mock, ForemanRhCloud.proxy_setting
   end
 
   test 'selects global foreman proxy' do
@@ -42,14 +25,6 @@ class RhCloudHttpProxyTest < ActiveSupport::TestCase
 
   def setup_global_foreman_proxy
     Setting[:http_proxy] = @global_foreman_proxy_mock
-  end
-
-  def setup_cdn_proxy
-    old_cdn_setting = SETTINGS[:katello][:cdn_proxy]
-    SETTINGS[:katello][:cdn_proxy] = @katello_cdn_proxy_mock
-    yield
-  ensure
-    SETTINGS[:katello][:cdn_proxy] = old_cdn_setting
   end
 
   test 'transform proxy scheme test' do
