@@ -124,7 +124,7 @@ module ForemanRhCloud
   end
 
   def self.legacy_insights_ca
-    "#{ForemanRhCloud::Engine.root}/config/rh_cert-api_chain.pem"
+    "#{ForemanRhCloud::Engine.root}/config/rh_cert-api_chain.pem" unless ForemanRhCloud.with_local_advisor_engine?
   end
 
   def self.cloud_url_validator
