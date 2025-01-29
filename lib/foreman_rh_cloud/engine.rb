@@ -106,16 +106,17 @@ module ForemanRhCloud
             Role::MANAGER => plugin_permissions,
             Role::SYSTEM_ADMIN => plugin_permissions
 
-          # Adding a sub menu after hosts menu
-          divider :top_menu, caption: N_('Insights'), parent: :configure_menu
-          menu :top_menu,
-            :inventory_upload,
-            caption: N_('Inventory Upload'),
-            url: '/foreman_rh_cloud/inventory_upload',
-            url_hash: { controller: :react, action: :index },
-            parent: :configure_menu,
-            if: -> { !ForemanRhCloud.with_local_advisor_engine? }
-          menu :top_menu, :insights_hits, caption: N_('Recommendations'), url: '/foreman_rh_cloud/insights_cloud', url_hash: { controller: :react, action: :index }, parent: :configure_menu
+          # Adding a top-level menu item
+          sub_menu :top_menu, :insights_menu, caption: N_('Insights'), icon: 'fa fa-cloud', after: :hosts_menu do
+            menu :top_menu,
+              :inventory_upload,
+              caption: N_('Inventory Upload'),
+              url: '/foreman_rh_cloud/inventory_upload',
+              url_hash: { controller: :react, action: :index },
+              parent: :insights_menu,
+              if: -> { !ForemanRhCloud.with_local_advisor_engine? }
+            menu :top_menu, :insights_hits, caption: N_('Recommendations'), url: '/foreman_rh_cloud/insights_cloud', url_hash: { controller: :react, action: :index }, parent: :insights_menu
+          end
 
           register_facet InsightsFacet, :insights do
             configure_host do
