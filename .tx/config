@@ -8,4 +8,4 @@ source_lang            = en
 type                   = PO
 replace_edited_strings = false
 keep_translations      = false
-minimum_perc           = 50
+minimum_perc           = 0
