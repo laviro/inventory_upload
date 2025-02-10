@@ -14,7 +14,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_rh_cloud 1.0.0\n"
+"Project-Id-Version: foreman_rh_cloud 11.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-01-20 13:26+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
@@ -27,8 +27,8 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 100000"
 "0 == 0 ? 1 : 2;\n"
 
-msgid " Sync inventory status"
-msgstr "Sync statuts inventaires"
+msgid " Sync all inventory status"
+msgstr ""
 
 msgid "%s organizations"
 msgstr "%s organisations"
@@ -93,11 +93,11 @@ msgstr "Terminé"
 msgid "Configure"
 msgstr "Configurer"
 
-msgid "Configure Cloud Connector"
-msgstr "Configurer le connecteur cloud"
-
 msgid "Configure Cloud Connector on given hosts"
 msgstr "Configurer Cloud Connector sur des hôtes donnés"
+
+msgid "Configure cloud connector"
+msgstr ""
 
 msgid "Connectivity test"
 msgstr "Test de connectivité"
@@ -159,6 +159,9 @@ msgstr "Exclure les paquets du téléchargement vers Red Hat Cloud"
 msgid "Exit Code: %s"
 msgstr "Code de sortie : %s"
 
+msgid "Fetch Insights-related host details"
+msgstr ""
+
 msgid "Fetching data about your accounts"
 msgstr "Récupérer des données sur vos comptes"
 
@@ -183,14 +186,17 @@ msgstr "Plugin Foreman qui traite et télécharge les données vers Red Hat Clou
 msgid "Full Screen"
 msgstr "Plein écran"
 
+msgid "Generate and upload report"
+msgstr ""
+
 msgid "Generate the report, but do not upload"
 msgstr ""
 
 msgid "Generating"
 msgstr "En cours de génération"
 
-msgid "Go to Satellite Insights page"
-msgstr "Aller à la page Satellite Insights"
+msgid "Go to Foreman Insights page"
+msgstr ""
 
 msgid "Go to first page"
 msgstr "Aller à la première page"
@@ -231,9 +237,6 @@ msgstr "Inclure des paramètres dans les rapports insights-clients"
 msgid "Insights"
 msgstr "Insights"
 
-msgid "Insights synchronization process is used to provide Insights recommendations output for hosts managed here."
-msgstr "Le processus de synchronisation Insights est utilisé pour fournir des recommandations Insights pour les hôtes gérés ici."
-
 msgid "Inventory"
 msgstr "Inventaire"
 
@@ -254,6 +257,9 @@ msgstr "Articles par page"
 
 msgid "Knowledgebase article"
 msgstr "Article de base de connaissances"
+
+msgid "List of host UUIDs"
+msgstr ""
 
 msgid "Loading"
 msgstr "Chargement"
@@ -357,8 +363,8 @@ msgstr "Recommandations sélectionnées : %s."
 msgid "Recommendations synced successfully"
 msgstr "Les recommandations ont été synchronisées"
 
-msgid "Reconfigure Cloud Connector"
-msgstr "Reconfigurer le connecteur cloud"
+msgid "Reconfigure cloud connector"
+msgstr ""
 
 msgid "Red Hat Cloud Inventory"
 msgstr "Inventaire Red Hat Cloud"
@@ -386,9 +392,6 @@ msgstr "Rapports"
 
 msgid "Resolution"
 msgstr "Résolution"
-
-msgid "Restart"
-msgstr "Redémarrer"
 
 msgid "Run RH Cloud playbook"
 msgstr "Exécuter le playbook RH Cloud"
@@ -420,6 +423,9 @@ msgstr "L'importation doit-elle inclure les balises de paramètres de Foreman ?"
 msgid "Show Advanced Settings"
 msgstr "Afficher les paramètres avancés"
 
+msgid "Show if system is configured to use local iop-advisor-engine."
+msgstr ""
+
 msgid "Start inventory synchronization"
 msgstr "Démarrer la synchronisation de l'inventaire"
 
@@ -441,14 +447,17 @@ msgstr "Recommandations de sync"
 msgid "Synchronize recommendations Automatically"
 msgstr "Synchroniser automatiquement les recommandations"
 
-msgid "The Red Hat Hybrid Cloud Console provides a set of cloud services, including Red Hat Insights and Subscriptions, that provide predictive analysis, remediation of issues, and unified subscription reporting for this Satellite instance."
+msgid "The Foreman inventory upload plugin automatically uploads Foreman host inventory data to the Inventory service of Insights, where it can also be used by the Subscriptions service for subscription reporting. If you use the Subscriptions service, enabling inventory uploads is required."
 msgstr ""
 
-msgid "The Satellite inventory upload plugin automatically uploads Satellite host inventory data to the Inventory service of Insights, where it can also be used by the Subscriptions service for subscription reporting. If you use the Subscriptions service, enabling inventory uploads is required."
+msgid "The Red Hat Hybrid Cloud Console provides a set of cloud services, including Red Hat Insights and Subscriptions, that provide predictive analysis, remediation of issues, and unified subscription reporting for this Foreman instance."
 msgstr ""
 
 msgid "The report file %{filename} doesn't exist"
 msgstr "Le fichier de rapport %{filename} n'existe pas"
+
+msgid "The scheduled process is disabled because this Foreman is configured with the use_local_advisor_engine option."
+msgstr ""
 
 msgid "The server returned the following error: %s"
 msgstr "Le serveur a renvoyé l'erreur suivante : %s"
@@ -462,7 +471,7 @@ msgstr ""
 msgid "This action will also enable automatic reports upload"
 msgstr "Cette action permettra également le téléchargement automatique des rapports"
 
-msgid "To enable this reporting for all Satellite organizations, set {uploadButtonName} to on. The data will be reported automatically once per day."
+msgid "To enable this reporting for all Foreman organizations, set {uploadButtonName} to on. The data will be reported automatically once per day."
 msgstr ""
 
 msgid "To manually upload the data for a specific organization, select an organization and click {restartButtonName}."
@@ -473,6 +482,15 @@ msgstr "Risque total"
 
 msgid "Total risks"
 msgstr "Risques totaux"
+
+msgid "Upload hits from iop-advisor-engine"
+msgstr ""
+
+msgid "Upload hits information"
+msgstr ""
+
+msgid "Upload rules related to the hits"
+msgstr ""
 
 msgid "Uploading"
 msgstr "Téléchargement"
@@ -489,17 +507,86 @@ msgstr "Afficher Red Hat Insights."
 msgid "Wait and %s"
 msgstr "Attendez et %s"
 
+msgid "Whether the resolution requires reboot"
+msgstr ""
+
+msgid "category name"
+msgstr ""
+
+msgid "generic"
+msgstr ""
+
 msgid "hosts page"
 msgstr "page hôtes"
 
+msgid "impact name"
+msgstr ""
+
+msgid "iop payload including resolutions, rules, hits"
+msgstr ""
+
 msgid "items"
 msgstr "articles"
+
+msgid "likelihood number"
+msgstr ""
+
+msgid "more info"
+msgstr ""
 
 msgid "page"
 msgstr "page"
 
 msgid "per page"
 msgstr "par page"
+
+msgid "publish date (YYYY-MM-DD)"
+msgstr ""
+
+msgid "rating"
+msgstr ""
+
+msgid "reason"
+msgstr ""
+
+msgid "reboot required"
+msgstr ""
+
+msgid "resolution description"
+msgstr ""
+
+msgid "resolution risk"
+msgstr ""
+
+msgid "result url"
+msgstr ""
+
+msgid "rule description"
+msgstr ""
+
+msgid "rule id"
+msgstr ""
+
+msgid "rule title"
+msgstr ""
+
+msgid "solution url"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "total risk"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "upload hits details json"
+msgstr ""
+
+msgid "upload resolutions related to the hits"
+msgstr ""
 
 msgid "view the job in progress"
 msgstr "visualiser job en cours"

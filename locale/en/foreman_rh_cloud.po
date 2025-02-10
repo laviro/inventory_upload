@@ -1,21 +1,23 @@
-# foreman_rh_cloud
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the foreman_rh_cloud package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# This file is distributed under the same license as foreman_rh_cloud.
-#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: version 0.0.1\n"
+"Project-Id-Version: foreman_rh_cloud 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2014-08-20 08:54+0100\n"
-"Last-Translator: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language-Team: Foreman Team <foreman-dev@googlegroups.com>\n"
+"PO-Revision-Date: 2025-02-10 20:07+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-msgid " Sync inventory status"
+msgid " Sync all inventory status"
 msgstr ""
 
 msgid "%s organizations"
@@ -81,10 +83,10 @@ msgstr ""
 msgid "Configure"
 msgstr ""
 
-msgid "Configure Cloud Connector"
+msgid "Configure Cloud Connector on given hosts"
 msgstr ""
 
-msgid "Configure Cloud Connector on given hosts"
+msgid "Configure cloud connector"
 msgstr ""
 
 msgid "Connectivity test"
@@ -147,6 +149,9 @@ msgstr ""
 msgid "Exit Code: %s"
 msgstr ""
 
+msgid "Fetch Insights-related host details"
+msgstr ""
+
 msgid "Fetching data about your accounts"
 msgstr ""
 
@@ -171,13 +176,16 @@ msgstr ""
 msgid "Full Screen"
 msgstr ""
 
+msgid "Generate and upload report"
+msgstr ""
+
 msgid "Generate the report, but do not upload"
 msgstr ""
 
 msgid "Generating"
 msgstr ""
 
-msgid "Go to Satellite Insights page"
+msgid "Go to Foreman Insights page"
 msgstr ""
 
 msgid "Go to first page"
@@ -219,9 +227,6 @@ msgstr ""
 msgid "Insights"
 msgstr ""
 
-msgid "Insights synchronization process is used to provide Insights recommendations output for hosts managed here."
-msgstr ""
-
 msgid "Inventory"
 msgstr ""
 
@@ -241,6 +246,9 @@ msgid "Items per page"
 msgstr ""
 
 msgid "Knowledgebase article"
+msgstr ""
+
+msgid "List of host UUIDs"
 msgstr ""
 
 msgid "Loading"
@@ -345,7 +353,7 @@ msgstr ""
 msgid "Recommendations synced successfully"
 msgstr ""
 
-msgid "Reconfigure Cloud Connector"
+msgid "Reconfigure cloud connector"
 msgstr ""
 
 msgid "Red Hat Cloud Inventory"
@@ -373,9 +381,6 @@ msgid "Reporting"
 msgstr ""
 
 msgid "Resolution"
-msgstr ""
-
-msgid "Restart"
 msgstr ""
 
 msgid "Run RH Cloud playbook"
@@ -408,6 +413,9 @@ msgstr ""
 msgid "Show Advanced Settings"
 msgstr ""
 
+msgid "Show if system is configured to use local iop-advisor-engine."
+msgstr ""
+
 msgid "Start inventory synchronization"
 msgstr ""
 
@@ -429,13 +437,16 @@ msgstr ""
 msgid "Synchronize recommendations Automatically"
 msgstr ""
 
-msgid "The Red Hat Hybrid Cloud Console provides a set of cloud services, including Red Hat Insights and Subscriptions, that provide predictive analysis, remediation of issues, and unified subscription reporting for this Satellite instance."
+msgid "The Foreman inventory upload plugin automatically uploads Foreman host inventory data to the Inventory service of Insights, where it can also be used by the Subscriptions service for subscription reporting. If you use the Subscriptions service, enabling inventory uploads is required."
 msgstr ""
 
-msgid "The Satellite inventory upload plugin automatically uploads Satellite host inventory data to the Inventory service of Insights, where it can also be used by the Subscriptions service for subscription reporting. If you use the Subscriptions service, enabling inventory uploads is required."
+msgid "The Red Hat Hybrid Cloud Console provides a set of cloud services, including Red Hat Insights and Subscriptions, that provide predictive analysis, remediation of issues, and unified subscription reporting for this Foreman instance."
 msgstr ""
 
 msgid "The report file %{filename} doesn't exist"
+msgstr ""
+
+msgid "The scheduled process is disabled because this Foreman is configured with the use_local_advisor_engine option."
 msgstr ""
 
 msgid "The server returned the following error: %s"
@@ -450,7 +461,7 @@ msgstr ""
 msgid "This action will also enable automatic reports upload"
 msgstr ""
 
-msgid "To enable this reporting for all Satellite organizations, set {uploadButtonName} to on. The data will be reported automatically once per day."
+msgid "To enable this reporting for all Foreman organizations, set {uploadButtonName} to on. The data will be reported automatically once per day."
 msgstr ""
 
 msgid "To manually upload the data for a specific organization, select an organization and click {restartButtonName}."
@@ -460,6 +471,15 @@ msgid "Total risk"
 msgstr ""
 
 msgid "Total risks"
+msgstr ""
+
+msgid "Upload hits from iop-advisor-engine"
+msgstr ""
+
+msgid "Upload hits information"
+msgstr ""
+
+msgid "Upload rules related to the hits"
 msgstr ""
 
 msgid "Uploading"
@@ -477,16 +497,85 @@ msgstr ""
 msgid "Wait and %s"
 msgstr ""
 
+msgid "Whether the resolution requires reboot"
+msgstr ""
+
+msgid "category name"
+msgstr ""
+
+msgid "generic"
+msgstr ""
+
 msgid "hosts page"
 msgstr ""
 
+msgid "impact name"
+msgstr ""
+
+msgid "iop payload including resolutions, rules, hits"
+msgstr ""
+
 msgid "items"
+msgstr ""
+
+msgid "likelihood number"
+msgstr ""
+
+msgid "more info"
 msgstr ""
 
 msgid "page"
 msgstr ""
 
 msgid "per page"
+msgstr ""
+
+msgid "publish date (YYYY-MM-DD)"
+msgstr ""
+
+msgid "rating"
+msgstr ""
+
+msgid "reason"
+msgstr ""
+
+msgid "reboot required"
+msgstr ""
+
+msgid "resolution description"
+msgstr ""
+
+msgid "resolution risk"
+msgstr ""
+
+msgid "result url"
+msgstr ""
+
+msgid "rule description"
+msgstr ""
+
+msgid "rule id"
+msgstr ""
+
+msgid "rule title"
+msgstr ""
+
+msgid "solution url"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "total risk"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "upload hits details json"
+msgstr ""
+
+msgid "upload resolutions related to the hits"
 msgstr ""
 
 msgid "view the job in progress"

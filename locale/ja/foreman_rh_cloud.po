@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_rh_cloud 1.0.0\n"
+"Project-Id-Version: foreman_rh_cloud 11.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-01-20 13:26+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
@@ -20,8 +20,8 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid " Sync inventory status"
-msgstr " インベントリーステータスの同期"
+msgid " Sync all inventory status"
+msgstr ""
 
 msgid "%s organizations"
 msgstr "組織 %s 件"
@@ -86,11 +86,11 @@ msgstr "完了"
 msgid "Configure"
 msgstr "設定"
 
-msgid "Configure Cloud Connector"
-msgstr "Cloud Connector の設定"
-
 msgid "Configure Cloud Connector on given hosts"
 msgstr "特定のホストで Cloud Connector を設定します。"
+
+msgid "Configure cloud connector"
+msgstr ""
 
 msgid "Connectivity test"
 msgstr "接続性テスト"
@@ -152,6 +152,9 @@ msgstr "パッケージが Red Hat クラウドにアップロードされない
 msgid "Exit Code: %s"
 msgstr "終了コード: %s"
 
+msgid "Fetch Insights-related host details"
+msgstr ""
+
 msgid "Fetching data about your accounts"
 msgstr "アカウントに関するデータの取得"
 
@@ -176,14 +179,17 @@ msgstr "データを処理して Red Hat Cloud にアップロードする Forem
 msgid "Full Screen"
 msgstr "全画面"
 
+msgid "Generate and upload report"
+msgstr ""
+
 msgid "Generate the report, but do not upload"
 msgstr ""
 
 msgid "Generating"
 msgstr "生成中"
 
-msgid "Go to Satellite Insights page"
-msgstr "Satellite Insights ページに移動する"
+msgid "Go to Foreman Insights page"
+msgstr ""
 
 msgid "Go to first page"
 msgstr "最初のページに移動"
@@ -224,9 +230,6 @@ msgstr "Insights クライアントレポートにパラメーターを含める
 msgid "Insights"
 msgstr "Insights"
 
-msgid "Insights synchronization process is used to provide Insights recommendations output for hosts managed here."
-msgstr "Insights の同期プロセスを使用して、ここで管理するホストに対して Insights の推奨事項の出力を提供します。"
-
 msgid "Inventory"
 msgstr "インベントリー"
 
@@ -247,6 +250,9 @@ msgstr "各ページの項目"
 
 msgid "Knowledgebase article"
 msgstr "ナレッジベースアーティクル"
+
+msgid "List of host UUIDs"
+msgstr ""
 
 msgid "Loading"
 msgstr "ロード中"
@@ -350,8 +356,8 @@ msgstr "選択済みの推奨事項: %s 件"
 msgid "Recommendations synced successfully"
 msgstr "推奨事項が正常に同期されました"
 
-msgid "Reconfigure Cloud Connector"
-msgstr "Cloud Connector の再設定"
+msgid "Reconfigure cloud connector"
+msgstr ""
 
 msgid "Red Hat Cloud Inventory"
 msgstr "Red Hat Cloud インベントリー"
@@ -379,9 +385,6 @@ msgstr "レポート"
 
 msgid "Resolution"
 msgstr "解決策"
-
-msgid "Restart"
-msgstr "再起動"
 
 msgid "Run RH Cloud playbook"
 msgstr "RH Cloud Playbook の実行"
@@ -413,6 +416,9 @@ msgstr "インポートには Foreman からのパラメータータグを含め
 msgid "Show Advanced Settings"
 msgstr "詳細設定の表示"
 
+msgid "Show if system is configured to use local iop-advisor-engine."
+msgstr ""
+
 msgid "Start inventory synchronization"
 msgstr "インベントリー同期の開始"
 
@@ -434,14 +440,17 @@ msgstr "同期の推奨事項"
 msgid "Synchronize recommendations Automatically"
 msgstr "推奨事項を自動的に同期する"
 
-msgid "The Red Hat Hybrid Cloud Console provides a set of cloud services, including Red Hat Insights and Subscriptions, that provide predictive analysis, remediation of issues, and unified subscription reporting for this Satellite instance."
+msgid "The Foreman inventory upload plugin automatically uploads Foreman host inventory data to the Inventory service of Insights, where it can also be used by the Subscriptions service for subscription reporting. If you use the Subscriptions service, enabling inventory uploads is required."
 msgstr ""
 
-msgid "The Satellite inventory upload plugin automatically uploads Satellite host inventory data to the Inventory service of Insights, where it can also be used by the Subscriptions service for subscription reporting. If you use the Subscriptions service, enabling inventory uploads is required."
+msgid "The Red Hat Hybrid Cloud Console provides a set of cloud services, including Red Hat Insights and Subscriptions, that provide predictive analysis, remediation of issues, and unified subscription reporting for this Foreman instance."
 msgstr ""
 
 msgid "The report file %{filename} doesn't exist"
 msgstr "%{filename} レポートファイルがありません"
+
+msgid "The scheduled process is disabled because this Foreman is configured with the use_local_advisor_engine option."
+msgstr ""
 
 msgid "The server returned the following error: %s"
 msgstr "サーバーは以下のエラーを返しました: %s"
@@ -455,7 +464,7 @@ msgstr ""
 msgid "This action will also enable automatic reports upload"
 msgstr "このアクションを実行すると、自動レポートのアップロードも有効になります。"
 
-msgid "To enable this reporting for all Satellite organizations, set {uploadButtonName} to on. The data will be reported automatically once per day."
+msgid "To enable this reporting for all Foreman organizations, set {uploadButtonName} to on. The data will be reported automatically once per day."
 msgstr ""
 
 msgid "To manually upload the data for a specific organization, select an organization and click {restartButtonName}."
@@ -466,6 +475,15 @@ msgstr "リスクの総数"
 
 msgid "Total risks"
 msgstr "リスクの総数"
+
+msgid "Upload hits from iop-advisor-engine"
+msgstr ""
+
+msgid "Upload hits information"
+msgstr ""
+
+msgid "Upload rules related to the hits"
+msgstr ""
 
 msgid "Uploading"
 msgstr "アップロード中..."
@@ -482,17 +500,86 @@ msgstr "Red Hat Insights での表示"
 msgid "Wait and %s"
 msgstr "待機して %s"
 
+msgid "Whether the resolution requires reboot"
+msgstr ""
+
+msgid "category name"
+msgstr ""
+
+msgid "generic"
+msgstr ""
+
 msgid "hosts page"
 msgstr "ホストページ"
 
+msgid "impact name"
+msgstr ""
+
+msgid "iop payload including resolutions, rules, hits"
+msgstr ""
+
 msgid "items"
 msgstr "項目"
+
+msgid "likelihood number"
+msgstr ""
+
+msgid "more info"
+msgstr ""
 
 msgid "page"
 msgstr "ページ"
 
 msgid "per page"
 msgstr "/ページ"
+
+msgid "publish date (YYYY-MM-DD)"
+msgstr ""
+
+msgid "rating"
+msgstr ""
+
+msgid "reason"
+msgstr ""
+
+msgid "reboot required"
+msgstr ""
+
+msgid "resolution description"
+msgstr ""
+
+msgid "resolution risk"
+msgstr ""
+
+msgid "result url"
+msgstr ""
+
+msgid "rule description"
+msgstr ""
+
+msgid "rule id"
+msgstr ""
+
+msgid "rule title"
+msgstr ""
+
+msgid "solution url"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "total risk"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "upload hits details json"
+msgstr ""
+
+msgid "upload resolutions related to the hits"
+msgstr ""
 
 msgid "view the job in progress"
 msgstr "処理中のジョブを表示する"

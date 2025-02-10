@@ -4,173 +4,171 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# tim123, 2023
+# 진선재, 2023
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2023
 # Bryan Kearney <bryan.kearney@gmail.com>, 2023
-# Amit Upadhye <aupadhye@redhat.com>, 2023
-# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2023
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_rh_cloud 11.1.0\n"
+"Project-Id-Version: foreman_rh_cloud 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-01-20 13:26+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
-"n.nl>, 2023\n"
-"Language-Team: Chinese (China) (https://app.transifex.com/foreman/teams/114/zh"
-"_CN/)\n"
+"n.nl>, 2024\n"
+"Language-Team: Korean (https://app.transifex.com/foreman/teams/114/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
+"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid " Sync all inventory status"
 msgstr ""
 
 msgid "%s organizations"
-msgstr "%s 机构"
+msgstr "%s 조직"
 
 msgid "About subscription watch"
-msgstr "订阅查看"
+msgstr "서브스크립션 감시 정보"
 
 msgid "Actions history"
-msgstr "操作历史记录"
+msgstr "작업 내역"
 
 msgid "Advanced Inventory Settings"
-msgstr "高级清单设置"
+msgstr "고급 인벤토리 설정"
 
 msgid "All recommendations are now selected."
-msgstr "现在选择了所有建议。"
+msgstr "모든 권장 사항이 선택되었습니다."
 
 msgid "Any Organization"
-msgstr "任意机构"
+msgstr "모든 조직 "
 
 msgid "Apply Insights recommendations"
-msgstr "应用 Insights 建议"
+msgstr "Insights 권장 사항 적용"
 
 msgid "Automatic inventory upload"
-msgstr "自动清单上传"
+msgstr "자동 인벤토리 업로드"
 
 msgid "Automatic mismatch deletion"
 msgstr ""
 
 msgid "Cancel"
-msgstr "取消"
+msgstr "취소"
 
 msgid "Clear"
-msgstr "清除"
+msgstr "삭제"
 
 msgid "Clear Selection"
-msgstr "清除选择"
+msgstr "선택 취소"
 
 msgid "Cloud Connector has been configured however obfuscating host names setting is enabled, it's recommended to disable it"
-msgstr "已配置了云连接器，但启用了模糊主机名设置，建议禁用它"
+msgstr "Cloud Connector가 구성되었지만 호스트 이름 난독화 설정이 활성화되어 있으므로 비활성화하는 것이 좋습니다."
 
 msgid "Cloud Connector has been configured however the inventory auto-upload is disabled, it's recommended to enable it"
-msgstr "已配置了云连接器，但禁用了清单自动上传，建议启用它"
+msgstr "Cloud Connector가 구성되었지만 인벤토리 자동 업로드가 비활성화되어 있으므로 활성화하는 것이 좋습니다."
 
 msgid "Cloud Connector is in progress"
-msgstr "云连接器正在进行"
+msgstr "클라우드 커넥터가 진행 중입니다."
 
 msgid "Cloud connector job link"
-msgstr "云连接器作业链接"
+msgstr "클라우드 커넥터 작업 링크"
 
 msgid "Cloud connector setup has failed: "
-msgstr "云连接器设置失败： "
+msgstr "클라우드 커넥터 설정에 실패했습니다: "
 
 msgid "Cloud connector setup has started: "
-msgstr "云连接器设置已启动： "
+msgstr "클라우드 커넥터 설정이 시작되었습니다: "
 
 msgid "Cloud connector setup is in progress now: "
-msgstr "云连接器设置现在正在进行： "
+msgstr "현재 클라우드 커넥터 설정이 진행 중입니다. "
 
 msgid "Completed"
-msgstr "完成"
+msgstr "완료"
 
 msgid "Configure"
-msgstr "配置"
+msgstr "설정"
 
 msgid "Configure Cloud Connector on given hosts"
-msgstr "在给定主机上配置 Cloud Connector"
+msgstr "지정된 호스트에서 Cloud Connector 구성"
 
 msgid "Configure cloud connector"
 msgstr ""
 
 msgid "Connectivity test"
-msgstr "连接测试"
+msgstr "연결성 테스트"
 
 msgid "Critical"
-msgstr "关键"
+msgstr "중요함"
 
 msgid "Current page"
-msgstr "当前页"
+msgstr "현재 페이지"
 
 msgid "Disconnected hosts: "
-msgstr "断开连接的主机："
+msgstr "연결이 끊긴 호스트: "
 
 msgid "Displays manifest statuses per accessible organizations."
-msgstr "显示每个可访问的机构的清单状态。"
+msgstr "액세스 가능한 조직별 매니페스트 상태를 표시합니다."
 
 msgid "Documentation"
-msgstr "文档"
+msgstr "문서 "
 
 msgid "Download Report"
-msgstr "下载报告"
+msgstr "보고서 다운로드"
 
 msgid "Download latest report"
-msgstr "下载最新報告"
+msgstr "최신 보고서 다운로드"
 
 msgid "Enable automatic deletion of mismatched host records from the Red Hat cloud"
 msgstr ""
 
 msgid "Enable automatic synchronization of Insights recommendations from the Red Hat cloud"
-msgstr "启用来自红帽云的 Insights 建议自动同步"
+msgstr "Red Hat 클라우드에서 Insights 권장 사항의 자동 동기화를 활성화합니다."
 
 msgid "Enable automatic upload of your host inventory to the Red Hat cloud"
-msgstr "启用自动将主机清单上传到红帽云"
+msgstr "호스트 인벤토리를 Red Hat 클라우드에 자동으로 업로드하도록 설정"
 
 msgid "Enable automatic upload of your hosts inventory to the Red Hat cloud"
-msgstr "启用自动将主机清单上传到红帽云"
+msgstr "호스트 인벤토리를 Red Hat 클라우드에 자동으로 업로드하도록 설정"
 
 msgid "Enable cloud connector"
-msgstr "启用云连接器"
+msgstr "클라우드 커넥터 활성화"
 
 msgid "Enable inventory upload"
-msgstr "启用清单上传"
+msgstr "인벤토리 업로드 활성화"
 
 msgid "Encountered an error while trying to access the server:"
-msgstr "在尝试访问服务器时遇到错误："
+msgstr "서버에 접근하는 동안 오류가 발생했습니다:"
 
 msgid "Exclude installed Packages"
-msgstr "排除安装的软件包"
+msgstr "설치된 패키지 제외"
 
 msgid "Exclude installed packages from being uploaded to the Red Hat cloud"
-msgstr "将安装的软件包上传到红帽云"
+msgstr "설치된 패키지가 Red Hat 클라우드에 업로드되는 것을 제외합니다."
 
 msgid "Exclude packages"
-msgstr "排除软件包"
+msgstr "패키지 제외"
 
 msgid "Exclude packages from being uploaded to the Red Hat cloud"
-msgstr "排除软件包上传到红帽云"
+msgstr "Red Hat 클라우드에 업로드되는 패키지 제외"
 
 msgid "Exit Code: %s"
-msgstr "退出代码：%s"
+msgstr "종료 코드: %s"
 
 msgid "Fetch Insights-related host details"
 msgstr ""
 
 msgid "Fetching data about your accounts"
-msgstr "获取有关您的帐户的数据"
+msgstr "귀하의 계정에 대한 데이터를 가져오는 중"
 
 msgid "Filter.."
-msgstr "过滤器..."
+msgstr "필터..."
 
 msgid "Fix host"
-msgstr "修复主机"
+msgstr "호스트 수정"
 
 msgid "For more info, please visit the"
-msgstr "如需更多信息，请访问"
+msgstr "자세한 내용은 다음에서 참조하세요"
 
 msgid "For more information about Insights and Cloud Connector, see:"
 msgstr ""
@@ -179,10 +177,10 @@ msgid "For more information about the Subscriptions service, see:"
 msgstr ""
 
 msgid "Foreman plugin that process & upload data to Red Hat Cloud"
-msgstr "处理数据并将其上传到红帽云的 Foreman 插件"
+msgstr "Red Hat Cloud에 데이터를 처리하고 업로드하는 Foreman 플러그인"
 
 msgid "Full Screen"
-msgstr "全屏"
+msgstr "전체 화면"
 
 msgid "Generate and upload report"
 msgstr ""
@@ -191,259 +189,259 @@ msgid "Generate the report, but do not upload"
 msgstr ""
 
 msgid "Generating"
-msgstr "生成中"
+msgstr "생성 중"
 
 msgid "Go to Foreman Insights page"
 msgstr ""
 
 msgid "Go to first page"
-msgstr "前往第一页"
+msgstr "첫 번째 페이지로 이동"
 
 msgid "Go to last page"
-msgstr "前往最后一页"
+msgstr "마지막 페이지로 이동"
 
 msgid "Go to next page"
-msgstr "前往下一页"
+msgstr "다음 페이지로 이동"
 
 msgid "Go to previous page"
-msgstr "前往上一页"
+msgstr "이전 페이지로 이동"
 
 msgid "Grab hosts that are missing in RH Cloud"
 msgstr ""
 
 msgid "Host Insights recommendations"
-msgstr "主机 Insights 建议"
+msgstr "호스트 Insights 추천"
 
 msgid "Host was not uploaded to your RH cloud inventory"
-msgstr "主机没有上传到您的 RH 云清单"
+msgstr "호스트가 RH 클라우드 인벤토리에 업로드되지 않았습니다."
 
 msgid "Hostname"
-msgstr "主机名"
+msgstr "호스트 이름"
 
 msgid "Hosts with subscription in organization: "
-msgstr "机构中具有订阅的主机： "
+msgstr "조직에 서브스크립션이 있는 호스트: "
 
 msgid "ID of the RHC(Yggdrasil) daemon"
-msgstr "RHC (Yggdrasil)守护进程的 ID"
+msgstr "RHC(Yggdrasil) 데몬의 ID"
 
 msgid "Important"
-msgstr "重要"
+msgstr "중요"
 
 msgid "Include parameters in insights-client reports"
-msgstr "在 insights-client 报告中包含参数"
+msgstr "insights-client 보고서에 매개변수 포함"
 
 msgid "Insights"
 msgstr "Insights"
 
 msgid "Inventory"
-msgstr "清单"
+msgstr "인벤토리"
 
 msgid "Inventory Auto Upload"
-msgstr "清单自动上传"
+msgstr "인벤토리 자동 업로드"
 
 msgid "Inventory Upload"
-msgstr "清单上传"
+msgstr "인벤토리 업로드"
 
 msgid "Inventory sync has failed: "
-msgstr "清单同步失败： "
+msgstr "인벤토리 동기화에 실패했습니다: "
 
 msgid "Inventory sync has started:"
-msgstr "清单同步已启动："
+msgstr "인벤토리 동기화가 시작되었습니다:"
 
 msgid "Items per page"
-msgstr "每页的项"
+msgstr "페이지당 항목"
 
 msgid "Knowledgebase article"
-msgstr "知识库文章"
+msgstr "지식베이스 문서"
 
 msgid "List of host UUIDs"
 msgstr ""
 
 msgid "Loading"
-msgstr "加载"
+msgstr "로딩 중 "
 
 msgid "Loading..."
-msgstr "载入中..."
+msgstr "로딩..."
 
 msgid "Low"
-msgstr "低"
+msgstr "낮음"
 
 msgid "Manual"
-msgstr "手册"
+msgstr "수동"
 
 msgid "Moderate"
-msgstr "中等"
+msgstr "중간 수준"
 
 msgid "More details can be found in"
-msgstr "如需更多详细信息，请参阅"
+msgstr "자세한 내용은 다음에서 확인할 수 있습니다."
 
 msgid "Next run: "
-msgstr "下一次运行 ："
+msgstr "다음 실행: "
 
 msgid "No"
-msgstr "否"
+msgstr "아니오  "
 
 msgid "No recommendations were found for this host!"
-msgstr "没有找到此主机的建议！"
+msgstr "이 호스트에 대한 추천을 찾을 수 없습니다!"
 
 msgid "No results found"
-msgstr "没有找到结果"
+msgstr "검색 결과가 없습니다"
 
 msgid "No task was found"
-msgstr "没有找到任务"
+msgstr "작업을 찾을 수 없습니다"
 
 msgid "Not reporting"
-msgstr "未报告"
+msgstr "보고하지 않음"
 
 msgid "Nothing to sync, there are no hosts with subscription for this organization."
-msgstr "没有同步，此机构没有带有订阅的主机。"
+msgstr "동기화할 것이 없습니다. 이 조직에 대한 서브스크립션이 있는 호스트가 없습니다."
 
 msgid "Notice"
-msgstr "注意事項"
+msgstr "주의 "
 
 msgid "Obfuscate IPs"
-msgstr "模糊 IP"
+msgstr "IP 난독화"
 
 msgid "Obfuscate host ipv4 addresses"
-msgstr "模糊的主机 ipv4 地址"
+msgstr "호스트 ipv4 주소 난독화"
 
 msgid "Obfuscate host names"
-msgstr "模糊主机名"
+msgstr "호스트 이름 난독화"
 
 msgid "Obfuscate host names sent to the Red Hat cloud"
-msgstr "发送到红帽云的模糊主机名"
+msgstr "Red Hat 클라우드로 전송된 호스트 이름을 난독화합니다."
 
 msgid "Obfuscate ipv4 addresses sent to the Red Hat cloud"
-msgstr "发送到红帽云的模糊 ipv4 地址"
+msgstr "Red Hat 클라우드로 전송된 ipv4 주소 난독화"
 
 msgid "Oops! Couldn't find organization that matches your query"
-msgstr "未找到与您的查询匹配的机构"
+msgstr "죄송합니다! 귀하의 쿼리와 일치하는 조직을 찾을 수 없습니다."
 
 msgid "Organization status"
-msgstr "机构标签"
+msgstr "조직 상태"
 
 msgid "Pagination"
-msgstr "分页"
+msgstr "페이지 지정"
 
 msgid "Playbook"
-msgstr "运行 playbook"
+msgstr "Playbook"
 
 msgid "RH Cloud"
-msgstr "RH Cloud"
+msgstr "RH 클라우드"
 
 msgid "RHC daemon id"
-msgstr "RHC 守护进程 ID"
+msgstr "RHC 데몬 ID"
 
 msgid "RHCloud"
 msgstr "RHCloud"
 
 msgid "Read more about it in RH cloud insights"
-msgstr "在 RH Cloud insights 中了解更多有关它的信息"
+msgstr "RH 클라우드 Insights에서 이에 대해 자세히 알아보세요."
 
 msgid "Reboot Required"
-msgstr "需要重启"
+msgstr "재부팅이 필요합니다"
 
 msgid "Recommendation"
-msgstr "建议"
+msgstr "추천"
 
 msgid "Recommendation sync has failed: "
-msgstr "建议同步失败： "
+msgstr "추천 동기화에 실패했습니다:"
 
 msgid "Recommendation sync has started: "
-msgstr "建议同步已启动： "
+msgstr "추천 동기화가 시작되었습니다: "
 
 msgid "Recommendations"
-msgstr "建议"
+msgstr "권장 사항"
 
 msgid "Recommendations selected: %s."
-msgstr "选择的建议：%s。"
+msgstr "선택된 권장 사항:%s ."
 
 msgid "Recommendations synced successfully"
-msgstr "成功同步建议"
+msgstr "추천사항이 성공적으로 동기화되었습니다."
 
 msgid "Reconfigure cloud connector"
 msgstr ""
 
 msgid "Red Hat Cloud Inventory"
-msgstr "红帽云清单"
+msgstr "Red Hat 클라우드 인벤토리"
 
 msgid "Red Hat Insights"
 msgstr "Red Hat Insights"
 
 msgid "Red Hat Insights Data and Application Security"
-msgstr "Red Hat Insights 数据和应用程序安全"
+msgstr "Red Hat Insights 데이터 및 애플리케이션 보안"
 
 msgid "Red Hat Inventory"
-msgstr "Red Hat 清单"
+msgstr "Red Hat 인벤토리"
 
 msgid "Remain"
-msgstr "保留"
+msgstr "유지"
 
 msgid "Remediate"
-msgstr "补救"
+msgstr "개선 사항"
 
 msgid "Remediation summary"
-msgstr "补救概述"
+msgstr "개선 요약"
 
 msgid "Reporting"
-msgstr "报告"
+msgstr "보고 중 "
 
 msgid "Resolution"
-msgstr "解决方案"
+msgstr "해결 방법"
 
 msgid "Run RH Cloud playbook"
-msgstr "运行 RH Cloud playbook"
+msgstr "RH Cloud playbook 실행"
 
 msgid "Run playbook genrated by Red Hat remediations app"
-msgstr "运行由红帽补救应用生成的 playbook"
+msgstr "Red Hat Remediations 앱에서 생성된 playbook 실행"
 
 msgid "Run remediation playbook generated by Insights"
-msgstr "运行 Insights 生成的补救 playbook"
+msgstr "Insights에서 생성된 수정 playbook 실행"
 
 msgid "Satellite server has %{hits_count} recommendations by Red Hat"
-msgstr "Satellite 服务器有 %{hits_count} 个红帽提供的建议"
+msgstr "Satellite 서버에는 Red Hat의 권장 사항이 %{hits_count} 개 있습니다"
 
 msgid "Scoped search string for host removal"
 msgstr ""
 
 msgid "Select recommendations from all pages"
-msgstr "在所有页面中选择建议"
+msgstr "모든 페이지에서 추천을 선택하세요"
 
 msgid "Set the current organization context for the request"
-msgstr "设置请求的当前机构上下文"
+msgstr "요청에 대한 현재 조직 컨텍스트 설정"
 
 msgid "Settings"
-msgstr "设置"
+msgstr "설정 "
 
 msgid "Should import include parameter tags from Foreman?"
-msgstr "应从 Foreman 导入包含参数标签？"
+msgstr "Foreman의 매개변수 태그를 가져와야 합니까?"
 
 msgid "Show Advanced Settings"
-msgstr "显示高级设置"
+msgstr "고급 설정 표시"
 
 msgid "Show if system is configured to use local iop-advisor-engine."
 msgstr ""
 
 msgid "Start inventory synchronization"
-msgstr "启动清单同步"
+msgstr "인벤토리 동기화 시작"
 
 msgid "Start report generation"
-msgstr "开始报告生成"
+msgstr "보고서 생성 시작"
 
 msgid "Successfully synced hosts: "
-msgstr "成功同步的主机："
+msgstr "성공적으로 호스트를 동기화했습니다: "
 
 msgid "Successfully uploaded to your RH cloud inventory"
-msgstr "成功上传到您的 RH 云清单"
+msgstr "RH 클라우드 인벤토리에 성공적으로 업로드되었습니다."
 
 msgid "Sync automatically"
-msgstr "自动同步"
+msgstr "자동으로 동기화"
 
 msgid "Sync recommendations"
-msgstr "同步建议"
+msgstr "동기화 권장 사항"
 
 msgid "Synchronize recommendations Automatically"
-msgstr "自动同步建议"
+msgstr "추천 사항을 자동으로 동기화합니다"
 
 msgid "The Foreman inventory upload plugin automatically uploads Foreman host inventory data to the Inventory service of Insights, where it can also be used by the Subscriptions service for subscription reporting. If you use the Subscriptions service, enabling inventory uploads is required."
 msgstr ""
@@ -452,22 +450,22 @@ msgid "The Red Hat Hybrid Cloud Console provides a set of cloud services, includ
 msgstr ""
 
 msgid "The report file %{filename} doesn't exist"
-msgstr "报告文件 %{filename} 不存在"
+msgstr "보고서 파일%{filename}이/가 존재하지 않습니다"
 
 msgid "The scheduled process is disabled because this Foreman is configured with the use_local_advisor_engine option."
 msgstr ""
 
 msgid "The server returned the following error: %s"
-msgstr "服务器返回以下错误：%s"
+msgstr "서버에서 다음 오류가 반환되었습니다. %s"
 
 msgid "The task failed with the following error:"
-msgstr "任务失败，错误为:"
+msgstr "다음 오류로 인해 작업이 실패했습니다."
 
 msgid "There are no recommendations for your hosts"
 msgstr ""
 
 msgid "This action will also enable automatic reports upload"
-msgstr "此操作还会启用自动报告上传"
+msgstr "이 작업을 수행하면 자동 보고서 업로드도 활성화됩니다."
 
 msgid "To enable this reporting for all Foreman organizations, set {uploadButtonName} to on. The data will be reported automatically once per day."
 msgstr ""
@@ -476,10 +474,10 @@ msgid "To manually upload the data for a specific organization, select an organi
 msgstr ""
 
 msgid "Total risk"
-msgstr "总风险"
+msgstr "총 위험"
 
 msgid "Total risks"
-msgstr "总风险"
+msgstr "총 위험"
 
 msgid "Upload hits from iop-advisor-engine"
 msgstr ""
@@ -491,19 +489,19 @@ msgid "Upload rules related to the hits"
 msgstr ""
 
 msgid "Uploading"
-msgstr "上载中"
+msgstr "업로드 중"
 
 msgid "Value %{value} is not a valid UUID"
-msgstr "值 %{value} 不是一个有效的 UUID"
+msgstr "값%{value}이/가 유효한 UUID가 아닙니다"
 
 msgid "View all recommendations"
-msgstr "查看所有建议"
+msgstr "모든 권장 사항 보기"
 
 msgid "View in Red Hat Insights"
-msgstr "禁用 Red Hat Insights"
+msgstr "Red Hat Insights에서 보기"
 
 msgid "Wait and %s"
-msgstr "等待和 %s"
+msgstr "대기 및 %s"
 
 msgid "Whether the resolution requires reboot"
 msgstr ""
@@ -515,7 +513,7 @@ msgid "generic"
 msgstr ""
 
 msgid "hosts page"
-msgstr "主机页"
+msgstr "호스트 페이지"
 
 msgid "impact name"
 msgstr ""
@@ -524,7 +522,7 @@ msgid "iop payload including resolutions, rules, hits"
 msgstr ""
 
 msgid "items"
-msgstr "项"
+msgstr "항목"
 
 msgid "likelihood number"
 msgstr ""
@@ -533,10 +531,10 @@ msgid "more info"
 msgstr ""
 
 msgid "page"
-msgstr "page"
+msgstr "페이지"
 
 msgid "per page"
-msgstr "每页"
+msgstr "페이지 당"
 
 msgid "publish date (YYYY-MM-DD)"
 msgstr ""
@@ -587,7 +585,7 @@ msgid "upload resolutions related to the hits"
 msgstr ""
 
 msgid "view the job in progress"
-msgstr "查看正在进行中的任务"
+msgstr "진행중인 작업 보기"
 
 msgid "view the task page for more details"
-msgstr "查看任务页面以了解更多详细信息"
+msgstr "자세한 내용은 작업 페이지 보기"

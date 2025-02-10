@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_rh_cloud 1.0.0\n"
+"Project-Id-Version: foreman_rh_cloud 11.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-01-20 13:26+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Language: ka\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-msgid " Sync inventory status"
-msgstr " ინვენტარის სტატუსის სინქრონიზაცია"
+msgid " Sync all inventory status"
+msgstr ""
 
 msgid "%s organizations"
 msgstr "%s ორგანიზაცია"
@@ -85,11 +85,11 @@ msgstr "დასრულებულია"
 msgid "Configure"
 msgstr "მორგება"
 
-msgid "Configure Cloud Connector"
-msgstr "ღრუბელთან მიერთების მორგება"
-
 msgid "Configure Cloud Connector on given hosts"
 msgstr "მითითებულ ჰოსტებზე Cloud Connector-ის მორგება"
+
+msgid "Configure cloud connector"
+msgstr ""
 
 msgid "Connectivity test"
 msgstr "მიერთების შემოწმება"
@@ -151,6 +151,9 @@ msgstr "პაკეტების ამოღება Red Hat Cloud-ზე �
 msgid "Exit Code: %s"
 msgstr "გასვლის კოდი: %s"
 
+msgid "Fetch Insights-related host details"
+msgstr ""
+
 msgid "Fetching data about your accounts"
 msgstr "მონაცემების გამოთხოვა თქვენი ანგარიშების შესახებ"
 
@@ -175,14 +178,17 @@ msgstr "Foreman-ის დამატება, რომელიც მონ
 msgid "Full Screen"
 msgstr "სრულეკრანიანი რეჟიმი"
 
+msgid "Generate and upload report"
+msgstr ""
+
 msgid "Generate the report, but do not upload"
 msgstr ""
 
 msgid "Generating"
 msgstr "გენერაცია"
 
-msgid "Go to Satellite Insights page"
-msgstr "Satellite Insights-ის გვერდზე გადასვლა"
+msgid "Go to Foreman Insights page"
+msgstr ""
 
 msgid "Go to first page"
 msgstr "პირველ გვერდზე"
@@ -223,9 +229,6 @@ msgstr "ჩასმის პარამეტრები insghts-client-ი�
 msgid "Insights"
 msgstr "Insights"
 
-msgid "Insights synchronization process is used to provide Insights recommendations output for hosts managed here."
-msgstr "აქედან მართული ჰოსტებისთვის Insights-ის რეკომენდაციის მისაწოდებლად Insights-ის სინქრონიზაციის პროცესი გამოიყენება."
-
 msgid "Inventory"
 msgstr "ინვენტარი"
 
@@ -246,6 +249,9 @@ msgstr "ჩანაწერი გვერდზე"
 
 msgid "Knowledgebase article"
 msgstr "ცოდნის ბაზის სტატია"
+
+msgid "List of host UUIDs"
+msgstr ""
 
 msgid "Loading"
 msgstr "იტვირთება"
@@ -349,8 +355,8 @@ msgstr "არჩეული რეკომენდაციები: %s."
 msgid "Recommendations synced successfully"
 msgstr "რეკომენდაციების სინქრონიზაცია წარმატებულია"
 
-msgid "Reconfigure Cloud Connector"
-msgstr "ღრუბელთან მიერთების თავიდან მორგება"
+msgid "Reconfigure cloud connector"
+msgstr ""
 
 msgid "Red Hat Cloud Inventory"
 msgstr "Red Hat Cloud-ის ინვენტარი"
@@ -378,9 +384,6 @@ msgstr "ანგარიში"
 
 msgid "Resolution"
 msgstr "გარჩევადობა"
-
-msgid "Restart"
-msgstr "გადატვრთვა"
 
 msgid "Run RH Cloud playbook"
 msgstr "RH Cloud-ის Playbok-ის გაშვება"
@@ -412,6 +415,9 @@ msgstr "უნდა შეიცავდეს შემოტანა პა
 msgid "Show Advanced Settings"
 msgstr "დამატებითი პარამეტრების ცვენება"
 
+msgid "Show if system is configured to use local iop-advisor-engine."
+msgstr ""
+
 msgid "Start inventory synchronization"
 msgstr "ინვენტარის სინქრონიზაციის დაწყება"
 
@@ -433,14 +439,17 @@ msgstr "სინქრონიზაციის რეკომენდა�
 msgid "Synchronize recommendations Automatically"
 msgstr "რეკომენდაციების ავტომატური სინქრონიზაცია"
 
-msgid "The Red Hat Hybrid Cloud Console provides a set of cloud services, including Red Hat Insights and Subscriptions, that provide predictive analysis, remediation of issues, and unified subscription reporting for this Satellite instance."
+msgid "The Foreman inventory upload plugin automatically uploads Foreman host inventory data to the Inventory service of Insights, where it can also be used by the Subscriptions service for subscription reporting. If you use the Subscriptions service, enabling inventory uploads is required."
 msgstr ""
 
-msgid "The Satellite inventory upload plugin automatically uploads Satellite host inventory data to the Inventory service of Insights, where it can also be used by the Subscriptions service for subscription reporting. If you use the Subscriptions service, enabling inventory uploads is required."
+msgid "The Red Hat Hybrid Cloud Console provides a set of cloud services, including Red Hat Insights and Subscriptions, that provide predictive analysis, remediation of issues, and unified subscription reporting for this Foreman instance."
 msgstr ""
 
 msgid "The report file %{filename} doesn't exist"
 msgstr "ანგარიშის ფაილი %{filename} არ არსებობს"
+
+msgid "The scheduled process is disabled because this Foreman is configured with the use_local_advisor_engine option."
+msgstr ""
 
 msgid "The server returned the following error: %s"
 msgstr "სერვერმა შემდეგი შეცდომა დააბრუნა: %ს"
@@ -454,7 +463,7 @@ msgstr ""
 msgid "This action will also enable automatic reports upload"
 msgstr "ეს ქმედება ავტომატურად ანგარიშების ატვირთვასაც ჩართავს"
 
-msgid "To enable this reporting for all Satellite organizations, set {uploadButtonName} to on. The data will be reported automatically once per day."
+msgid "To enable this reporting for all Foreman organizations, set {uploadButtonName} to on. The data will be reported automatically once per day."
 msgstr ""
 
 msgid "To manually upload the data for a specific organization, select an organization and click {restartButtonName}."
@@ -465,6 +474,15 @@ msgstr "სრული რისკი"
 
 msgid "Total risks"
 msgstr "სულ რისკები"
+
+msgid "Upload hits from iop-advisor-engine"
+msgstr ""
+
+msgid "Upload hits information"
+msgstr ""
+
+msgid "Upload rules related to the hits"
+msgstr ""
 
 msgid "Uploading"
 msgstr "ატვირთვა"
@@ -481,17 +499,86 @@ msgstr "Red Hat Insights-ში ნახვა"
 msgid "Wait and %s"
 msgstr "დაელოდეთ და %s"
 
+msgid "Whether the resolution requires reboot"
+msgstr ""
+
+msgid "category name"
+msgstr ""
+
+msgid "generic"
+msgstr ""
+
 msgid "hosts page"
 msgstr "ჰოსტების გვერდი"
 
+msgid "impact name"
+msgstr ""
+
+msgid "iop payload including resolutions, rules, hits"
+msgstr ""
+
 msgid "items"
 msgstr "ელემენტი"
+
+msgid "likelihood number"
+msgstr ""
+
+msgid "more info"
+msgstr ""
 
 msgid "page"
 msgstr "პანელი"
 
 msgid "per page"
 msgstr "გვერდზე"
+
+msgid "publish date (YYYY-MM-DD)"
+msgstr ""
+
+msgid "rating"
+msgstr ""
+
+msgid "reason"
+msgstr ""
+
+msgid "reboot required"
+msgstr ""
+
+msgid "resolution description"
+msgstr ""
+
+msgid "resolution risk"
+msgstr ""
+
+msgid "result url"
+msgstr ""
+
+msgid "rule description"
+msgstr ""
+
+msgid "rule id"
+msgstr ""
+
+msgid "rule title"
+msgstr ""
+
+msgid "solution url"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "total risk"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "upload hits details json"
+msgstr ""
+
+msgid "upload resolutions related to the hits"
+msgstr ""
 
 msgid "view the job in progress"
 msgstr "გაშვებული დავალების ნახვა"
