@@ -29,6 +29,10 @@ module InsightsCloud
     'host_registration_insights'
   end
 
+  def self.enable_client_param_inventory
+    'host_registraton_insights_inventory'
+  end
+
   def self.enable_cloud_remediations_param
     'enable_cloud_remediations'
   end

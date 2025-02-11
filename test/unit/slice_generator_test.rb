@@ -455,7 +455,7 @@ class SliceGeneratorTest < ActiveSupport::TestCase
 
   test 'excludes hosts with host_registration_insights set to false' do
     @host.host_parameters << HostParameter.create(
-      name: 'host_registration_insights',
+      name: 'host_registraton_insights_inventory',
       value: "false",
       parameter_type: 'boolean'
     )
